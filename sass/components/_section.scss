@@ -1,0 +1,25 @@
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+&--no-padding-top{
+    padding-top: 0;
+}
+
+&--other-background {
+    background-color: var(--buttons-bg-color);
+   
+}
+}
+.project-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.section--no-padding-top {
+    @media screen and(min-width: 320px) and (max-width: 1199px) {
+        display: none;
+    }
+     @media screen and(min-width: 1200px) {
+         padding-top: 0;
+     }
+}
