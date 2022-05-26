@@ -3,24 +3,14 @@
     padding-top: 60px;
     padding-bottom: 60px;
     // display: flex;
-    justify-content: center;
-    align-items: center;
-    display: block;
-@media screen and (min-width: 1200px) {
-    display: flex;
-    justify-content: center;
-     align-items: center;
-}
-
+   
 }
 
 .footer__box {
     // flex-grow: 1;
 @media screen and (min-width: 768px) {
-   
-        margin-right: 165px;
-        margin-left: 78px;
-    }
+    margin-right: 165px;
+}
 @media screen and (min-width: 1200px) {
 
     // flex-grow: 1;
@@ -32,15 +22,18 @@
 }
 
 .footer__container.container {
-    // display: flex;
-    // align-items: baseline;
-    text-align: center;
-    
-
+text-align: center;
+    @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+   flex-direction: row;
+   text-align: center;
+ }
     @media screen and (min-width: 1200px) {
             display: flex;
             align-items: baseline;
-           
+           text-align: start;
         }
 
 }
@@ -65,8 +58,6 @@
 
 .adress {
     padding-left: 0;     
-    margin-top: 20px;
-    margin-bottom: 60px;
     //  width: 231px;
 
 @media screen and (min-width: 1200px) {
@@ -128,9 +119,10 @@
     width: 100%;
     margin-bottom: 20px;
 
-    @media screen and(min-width: 320px) and (max-width: 1199px) {
-        width: 450px;
-    }
+    // @media screen and (max-width: 1199px) {
+    //     display: inline-flex;
+    //         text-align: center;
+    // }
            @media screen and (min-width:1200px) {
                display: flex;
                 width: 358px;
@@ -157,10 +149,11 @@
     color: var(--primary-bg-color);
     cursor: pointer;
 
-    @media screen and (min-width: 768px) {
-        display: flex;        
-       margin-left: 300px;   
-        }
+    // @media screen and (min-width: 768px) {
+    //     display: inline-flex;
+    //         text-align: center;
+     
+    //     }
 
     @media screen and (min-width:1200px) {
              
@@ -172,17 +165,10 @@
 .subscribe__icon {
    margin-left: 10px; 
 }
-
-//  .subscribe {
-//      text-align: center;
-// @media screen and (min-width: 768px) {
-//         display: block;
-//        align-items: center;
-//         }    
-   
-//    }
  
  .subscribe-field {
+     max-width: 450px;
+   
     @media screen and (min-width: 1200px){ 
      display: inline-flex;
      min-width: 570px;
@@ -197,12 +183,15 @@
 .footer-top {
     @media screen and (min-width: 768px) {
        display: flex;
-        // align-items: center;
-        align-items: baseline;
+       justify-content: space-around;
+     
+        margin-bottom: 60px;
 
         }
          @media screen and (min-width: 1200px) {
             display: flex;
                 align-items: baseline;
+                margin-bottom: 0;
+                margin-right: 93px;
          }
 }

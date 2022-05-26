@@ -2,7 +2,7 @@
     background-color: var(--primary-bg-color);
     border-bottom: 1px solid var(--border-box);
 
-    @media screen and(min-width: 320px) and (max-width: 479px) {
+    @media screen and (max-width: 479px) {
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -38,7 +38,7 @@
     display: flex;
 // display: none;
 
-@media screen and(min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
         display: none;
     }
 
@@ -60,17 +60,19 @@
 .contacts {
     display: flex;
     margin: 0;
-    padding-top: 32px;
-    padding-bottom: 32px;
+    
 }
 .site-nav__list {
     @media screen and(min-width: 768px) {
             display: flex;
+               
         }
     
         @media screen and(min-width: 1200px) {
             display: flex;
             margin-left: 93px;
+            padding-top: 32px;
+            padding-bottom: 32px;
         }
     
        
@@ -176,15 +178,14 @@
             fill: var(--accent-color);
 }
 
- @media screen and(min-width: 320px) and (max-width: 479px) {
+ @media screen and(max-width: 479px) {
      display: none;
  }
 
  @media screen and(min-width: 768px) and (max-width: 1199px) {
     font-size: 12px;
         line-height: 1.17;
-     padding-top: 5px;
-     padding-bottom: 5px;
+    
    
     
     //  padding-left: 30px;
@@ -194,17 +195,17 @@
      font-size: 14px;
  }
 }
-// .contacts__item {
-//     @media screen and (min-width:768px) {
-//         margin-left: 84px;
-//     }
-// }
+.contacts__item {
+    @media screen and(min-width: 768px) and (max-width: 1199px) {
+        &:not(:first-child) {
+            margin-top: 10px;
+        }
+    }
+}
 .contacts__item:not(:first-child) {
     @media screen and (min-width:1200px) {
          margin-left: 30px;
-    }
-
-    
+    }   
 }
 
 .contacts {
@@ -214,6 +215,10 @@
     @media screen and(min-width: 320px) and (max-width: 479px) {
             display: none;
         }
+                @media screen and(min-width: 768px) and (max-width: 1199px) {
+                    margin-top: 21px;
+                    margin-bottom: 21px;
+                }
 }
 
 .envelope {
@@ -223,7 +228,7 @@
     fill: var(--title-text-color);
     transition: fill var(--time-distribution);
 
-    @media screen and(min-width: 320px) and (max-width: 479px) {
+    @media screen and (max-width: 479px) {
                             display: none;
                         }
 
@@ -248,7 +253,7 @@
     fill: var(--title-text-color);
     transition: fill var(--time-distribution);
 
-    @media screen and(min-width: 320px) and (max-width: 479px) {
+    @media screen and(max-width: 479px) {
             display: none;
         }
 

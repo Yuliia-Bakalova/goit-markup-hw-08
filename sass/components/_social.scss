@@ -39,16 +39,10 @@
             fill: var(--primary-bg-color);
         }
 }
-.social-footer {
-    // margin-left: 70px;
-    // margin-right: 93px;
+.social-footer {   
 
+@media screen and (max-width: 767px) {
+    margin-top: 60px;
     margin-bottom: 60px;
-
-@media screen and (min-width:1200px) {
-    // margin-left: 70px;
-    margin-right: 93px;  
-    margin-bottom: 72px;
-
     }
 }
