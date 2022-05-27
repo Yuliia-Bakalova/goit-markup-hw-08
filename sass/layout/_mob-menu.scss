@@ -38,7 +38,7 @@
     padding-bottom: 48px;
     padding-left: 40px;
 
-
+    
     .container {
         display: flex;
         flex-direction: column;
@@ -113,7 +113,7 @@
 }
 
 .mob-contacts {
-    // margin-top: 302px;
+   
     margin-bottom: 64px;
 }
 
@@ -133,7 +133,9 @@
     padding-right: 10px;
     
 }
-
+.mob-soc {
+    display: flex;
+}
 .mob-soc__link {
     display: flex;
     font-weight: 500;
