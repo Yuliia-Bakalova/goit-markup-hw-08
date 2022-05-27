@@ -29,8 +29,8 @@
  }
 
     @media screen and (min-width:768px) {
-        display: flex;
-        flex-wrap: wrap;
+        // display: flex;
+        // flex-wrap: wrap;
         width: calc((100% - 2 * 30px) / 2);
             margin: 15px;
         // &:not(:nth-of-type(2n)) {
@@ -55,9 +55,6 @@ width: calc((100% - 3 * 30px) / 3);
             //     }
         }
 }
-
-
-
 
 
 .project {

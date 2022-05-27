@@ -229,6 +229,12 @@ li {
   padding-top: 16px;
   padding-bottom: 16px;
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .logo.logo__header {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
 
 .logo__studio {
   color: var(--primary-text-color);
@@ -347,7 +353,6 @@ li {
 }
 @media screen and (max-width: 479px) {
   .header {
-    display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
@@ -1393,8 +1398,6 @@ li {
 }
 @media screen and (min-width: 768px) {
   .portfolio__item {
-    display: flex;
-    flex-wrap: wrap;
     width: calc((100% - 60px) / 2);
     margin: 15px;
   }
