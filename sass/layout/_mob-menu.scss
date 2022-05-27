@@ -83,7 +83,9 @@
         color: var(--accent-color);
     }
 }
-
+.menu-link--current {
+    color: var(--accent-color);
+}
 
 .menu-item:not(:last-child) {
     margin-bottom: 32px;
