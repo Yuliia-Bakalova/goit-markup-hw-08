@@ -210,17 +210,24 @@ li {
   text-decoration: none;
   cursor: default;
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .logo {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .logo {
     font-size: 24px;
+    padding-top: 26px;
+    padding-bottom: 26px;
   }
+}
+
+.logo.logo__header {
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .logo__studio {
@@ -239,7 +246,7 @@ li {
   letter-spacing: 0.03em;
   color: var(--primary-bg-color);
 }
-@media screen and (min-width: 320px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .logo-studio--white {
     font-size: 24px;
   }
@@ -371,6 +378,7 @@ li {
 .container.header__container {
   display: flex;
   align-items: center;
+  width: 100%;
 }
 
 .site-nav {
@@ -421,7 +429,7 @@ li {
 .contacts {
   display: flex;
 }
-@media screen and (min-width: 320px) and (max-width: 479px) {
+@media screen and (max-width: 479px) {
   .contacts {
     display: none;
   }
@@ -1232,10 +1240,10 @@ li {
 }
 
 .mob-menu-close-btn {
-  display: block;
-  margin-left: auto;
-  margin-right: 15px;
-  margin-bottom: 10px;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
   border: none;
   background-color: transparent;
 }
@@ -1251,9 +1259,10 @@ li {
   background-color: var(--primary-bg-color);
   width: 100vw;
   height: 100vh;
-  padding-top: 10px;
+  padding-top: 48px;
   padding-bottom: 48px;
   padding-left: 40px;
+  padding-right: 48px;
 }
 .mob-menu .container {
   display: flex;
@@ -1361,12 +1370,20 @@ li {
   .portfolio {
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
+    margin: -15px;
   }
 }
 .portfolio__link {
   text-decoration: none;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1378,12 +1395,8 @@ li {
   .portfolio__item {
     display: flex;
     flex-wrap: wrap;
-  }
-  .portfolio__item:not(:nth-of-type(2n)) {
-    margin-right: 30px;
-  }
-  .portfolio__item:not(:nth-last-child(-n+2)) {
-    margin-bottom: 30px;
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
   }
 }
 @media screen and (min-width: 1200px) {

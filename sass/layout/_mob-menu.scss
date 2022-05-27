@@ -12,10 +12,13 @@
 }
 
 .mob-menu-close-btn {
-    display: block;
-    margin-left: auto;
-    margin-right: 15px;
-    margin-bottom: 10px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    // margin-left: auto;
+    // margin-right: 15px;
+    // margin-bottom: 10px;
     border: none;
     background-color: transparent;
 
@@ -34,9 +37,10 @@
     background-color: var(--primary-bg-color);
     width: 100vw;
     height: 100vh;
-    padding-top: 10px;
+    padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
+  padding-right: 48px;
 
     
     .container {
