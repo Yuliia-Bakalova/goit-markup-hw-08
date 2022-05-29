@@ -1192,6 +1192,10 @@ li {
   cursor: pointer;
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .mob-menu-btn {
   position: absolute;
   top: 10px;
